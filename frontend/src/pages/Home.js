@@ -44,8 +44,10 @@ function Home() {
         <div>
             <h1>Welcome {loggedInUser}</h1>
             <button onClick={handleLogout}>Logout</button>
+            <h2>this is your information</h2>
             <div>
                 {
+                    
                     products && products?.map((item, index) => (
                         <ul key={index}>
                             <span>{item.name} : {item.price}</span>
